@@ -13,7 +13,7 @@
 		$('.mobilemenu-toggle').removeClass('active');
 	})
 	//easy scroll nav
-	$('.topmenu a').on('click', function(){
+	$('.topmenu a, .foottitles a').on('click', function(){
 		
       var hash = this.hash;
 		$('html, body').animate({
