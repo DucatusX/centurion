@@ -36,6 +36,10 @@ h3{
 	margin-top:0;
 }
 /*********Main classes********/
+.sitemainwrapper{
+	/*position: relative;*/
+	/*padding-top: 65px;*/
+}
 .mobilemenu-toggle{
 	display:none;
 	position: absolute;
@@ -54,6 +58,15 @@ h3{
 	padding:100px 0;
 }
 /*********HEADER************/
+.headerinvisible{
+	width: 100%;
+	height: 65px;
+}
+.header{
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+}
 .headersite{
 	background-color:#000000;
 	padding: 8px 0 8px 0;
@@ -106,7 +119,6 @@ h3{
 	height:100%;
 	z-index:1;
 	background: rgba(255, 255, 255, 0.75);
-	z-index:10;
 }
 /************FOOTER***********/
 .footerrsite{
@@ -477,7 +489,7 @@ h3{
 }
 .gridsection1{
 	display:grid;
-	grid-template-columns:1.5fr 2fr;
+	grid-template-columns:1.75fr 2fr;
 	grid-gap:50px 100px;
 }
 .gridcoltext{
@@ -814,11 +826,8 @@ h3{
 	background-size:cover;
 	background-color:rgba(226, 237, 254, 1);
 }
-.the_networktext2 .abouttextgrid{
-	max-width: 460px;
-}
 .advantagescenturion{
-	padding:115px 0;
+	padding:90px 0;
 }
 .advantagescenturion .ourbusinesmaintext .titlesection{
 	font-weight: 500;

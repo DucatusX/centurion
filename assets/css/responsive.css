@@ -10,6 +10,10 @@
 	.textslidebox .busbtn{
 		font-size:12px;
 	}
+
+	.advsection1{
+		background-position: 400px center;
+	}
 }
 @media(max-width:1700px){
 
@@ -28,6 +32,10 @@
 	.itemslide:last-child .slideproto .textslidebox{
 		padding-left:55px;
 	}
+
+	.advsection1{
+		background-position: 200px center;
+	}
 }
 @media(max-width:1300px){
 
@@ -39,6 +47,9 @@
 	}
 	.slick-track{
 		left: 0 !important;
+	}
+	.itemslide .slideproto .textslidebox{
+		padding-left: 0;
 	}
 	.imagerectbox{
 		min-height:400px;
@@ -81,8 +92,30 @@
 }
 @media(max-width:1023px){
 
+	.ourbusinesmain{
+		padding-top: 20px;
+	}
+	.cftextsection4{
+		padding-top: 50px;
+	}
 	.ourbusinesmaintext{
 		display:none;
+	}
+	.advantagescenturion .ourbusinesmaintext{
+		display:block;
+	}
+	.advantagescenturion{
+		padding:50px 0;
+	}
+	.advantagescenturion .ourbusinesmaintext .titlesection{
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom:0;
+		text-align: center;
+	}
+	.advantagescenturion .businesgrid{
+		margin-top:30px;
 	}
 	.businesgrid{
 		grid-template-columns: 1fr;
@@ -92,11 +125,6 @@
 		max-width: 400px;
 		margin: 0 auto;
 		text-align: center;
-	}
-	.busineitemimg img {
-		width: 144px;
-		height: 144px;
-		object-fit: cover;
 	}
 	.specmaincover{
 		box-shadow: 0px 55px 60px rgba(24, 51, 139, 0.01);
@@ -142,20 +170,19 @@
 	}
 	
 	.ouradvantagesgrid{
-		grid-template-columns: 1fr 1fr;
 		grid-gap:33px 50px;
 	}
 	.ouradvantagesgrid .advantagecol{
-		display:block;
+		flex-direction: column;
 	}
 	.ouradvantagesgrid .nameitem{
+		max-width: 140px;
 		margin-left:0;
 		margin-top:20px;
-		font-size: 14px;
-		line-height: 17px;
+		text-align: center;
 	}
 	.ouradvantagesgrid .nameitem br {
-		/*display: none;*/
+		display: none;
 	}
 	.ouradvantagesgrid .iconitem{
 		width:80px;
@@ -175,14 +202,14 @@
 		font-size: 28px;
 		line-height: 34px;
 	}
+
+	.advsection1{
+		background-position: 60px center;
+	}
 }
 
 @media(max-width:991px){
-	
-	.gridsection1 {
-		grid-template-columns: 1fr;
-		grid-gap: 0;
-	}
+
 	.imagwpater{
 		text-align:center;
 	}
@@ -193,31 +220,14 @@
 		font-size:24px;
 		line-height:29px;
 	}
+	.gridcoltext h2 br{
+		display: none;
+	}
 	.gridcoltext{
 		font-size:16px;
 		line-height:20px;
 	}
-	.advsection1{
-		background-image:none!important;
-		padding-bottom:0!important;
-		padding-top:30px;
-	}
-	.imgmobile{
-		display:block;
-		text-align:center;
-		padding-top:20px;
-	}
-	.imgmobile img{
-		width:100%;
-		height: 500px;
-		display:block;
-		margin:auto;
-		object-fit: cover;
-	}
-	.cftextsection2{
-		background-image:none!important;
-		padding-bottom:0!important;
-	}
+
 	.gridcardlist1{
 		margin-top:50px;
 	}
@@ -226,6 +236,8 @@
 		grid-gap:40px 0;
 	}
 	.gridcardlist1 .carditem{
+		max-width: 400px;
+		margin: 0 auto;
 		text-align:center;
 	}
 	.gridcardlist1 .carditemimgcover{
@@ -245,7 +257,8 @@
 	}
 	.gridcardlist1 .carditemtext{
 		font-size: 14px;
-			line-height: 17px;
+		line-height: 17px;
+		text-align: justify;
 	}
 	.padding100{
 		padding:50px 0;
@@ -280,11 +293,7 @@
 	}
 	.exploreprojectsgrid .projectcol{
 		height:auto;
-		min-height:260px;
-	}
-	.exploreprojectsgrid .projectcol:nth-child(2){
-		height:auto;
-		min-height:100%;
+		min-height: initial;
 	}
 	
 	.porjetcgridtwo {
@@ -343,41 +352,21 @@
 	.membercolname{
 		font-size:25px;
 	}
-	
-	.the_networktext1{
-		padding:30px 0 0 0;
-		background-image:none;
+
+	.the_networktext1, .the_networktext2{
+		padding:60px 0 30px 0;
 	}
-	.the_networktext1 .gridcoltext h2 {
+	.gridsection1{
+		grid-template-columns: 1.5fr 1fr;
+	}
+	.the_networktext1 .gridcoltext h2{
 		font-size: 24px;
 		line-height:29px;
-	}
-	.the_networktext2{
-		padding:30px 0 0 0;
-		background-image:none;
 	}
 	.the_networktext2 .abouttextgrid .titlesection{
 		margin-bottom:20px;
 		font-size: 24px;
 		line-height: 29px;
-	}
-	.advantagescenturion{
-		padding:50px 0;
-	}
-	.advantagescenturion .ourbusinesmaintext{
-		display:block;
-	}
-	.advantagescenturion .ourbusinesmaintext .titlesection{
-		font-weight: 500;
-		font-size: 24px;
-		line-height: 29px;
-		margin-bottom:0;
-	}
-	.advantagescenturion .businesgrid{
-		margin-top:30px;
-	}
-	.advantagescenturion .busineitemimg {
-		text-align: left;
 	}
 	.networkinvest{
 		padding:40px 0;
@@ -388,11 +377,16 @@
 }
 
 @media(max-width:767px){
+
 	.mobilemenu-toggle{
 		display:block;
-		top: 9px;
-		left: 10px;
+		top: 17px;
+		left: 15px;
 		z-index:2;
+	}
+	.mobilemenu-toggle.active{
+		top: 16px;
+		left: 18px;
 	}
 	.headgrid{
 		grid-template-columns: 1fr;
@@ -401,7 +395,7 @@
 		display:none;
 		position: absolute;
 		left: 0;
-		top: 43px;
+		top: 57px;
 		width: 100%;
 		z-index:10;
 	}
@@ -425,40 +419,16 @@
 	}
 	.topmenu li:last-child a{
 		padding: 25px;
-		
-
 	}
 	
 	.footerrsite{
 		padding-top:40px;
 	}
-	.footlogo{
-		text-align:left;
-	}
-	.footergrid{
-		grid-template-columns: 1fr;
-	}
-	.fotcoltitle{
-		font-size: 18px;
-		margin-bottom:0;
-	}
 	.foottext{
-		font-size:14px;
-	}
-	.bottomenu{
-		margin:20px 0 0 0;
-	}
-	.bottomenu li {
-		display: block;
-		margin-bottom:10px;
-	}
-	.bottomenu li a{
-		padding:0;
 		font-size:14px;
 	}
 	
 	.titlesection{
-		margin-bottom:24px;
 		margin-bottom:30px;
 	}
 	.abouttextgrid{
@@ -485,16 +455,23 @@
 		box-sizing: border-box;
 	}
 
+	.ourbusinesmain{
+		padding-top: 0;
+	}
+	.cftextsection4{
+		padding-top: 50px;
+	}
+
+	.advsection1{
+		background-position: 0px center;
+	}
 	.advsection1 .titlesection{
 		font-size:24px;
 	}
 	.advsection1 .abouttextgrid p{
 		margin:0;
 	}
-	.imgmobile img {
-		height: 400px;
-	}
-	
+
 	.temgrid {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -507,17 +484,67 @@
 		font-size: 24px;
 		line-height: 29px;
 	}
+}
 
+@media(max-width:630px){
+
+	.advsection1{
+		background-image:none!important;
+		padding-bottom:0!important;
+		padding-top:30px;
+	}
+
+	.cftextsection2{
+		background-image:none!important;
+		padding-bottom:0!important;
+	}
+
+	.imgmobile{
+		display:block;
+		text-align:center;
+		padding-top:20px;
+	}
+	.imgmobile img{
+		width:100%;
+		height: 400px;
+		display:block;
+		margin:auto;
+		object-fit: cover;
+	}
+	.gridsection1{
+		grid-template-columns: 1fr;
+		grid-gap: 0;
+	}
+
+	.the_networktext1, .the_networktext2{
+		padding:30px 0 0 0;
+		background-image:none;
+	}
+	.the_networktext1 .imgmobile img{
+		height: 400px;
+	}
+
+	.ouradvantagesgrid{
+		grid-template-columns: 1fr 1fr;
+	}
 	.ouradvantagesgrid .iconitem{
-		width:48px;
-		height:48px;
+		width:70px;
+		height:70px;
 	}
 	.ouradvantagesgrid .iconitem .iconitemcover{
-		width:34px;
-		height:34px;
-	}
-	.ouradvantagesgrid .iconitem .iconitemcover img{
-		max-width:60%;
+		width:55px;
+		height:55px;
 	}
 }
 
+@media(max-width:400px){
+
+	.headlogo img{
+		left: 20px;
+	}
+
+	.busineitemimg img {
+		width: 144px;
+		height: 144px;
+	}
+}
