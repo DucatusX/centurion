@@ -50,9 +50,6 @@ h3{
 .mobilemenu-toggle.active{
 	background-image:url(../images/close.svg);
 }
-.copymobile{
-	display:none;
-}
 .padding100{
 	padding:100px 0;
 }
@@ -63,10 +60,15 @@ h3{
 	position: relative;
     z-index: 15;
 }
-.headegrid{
+.headgrid{
 	display:grid;
 	grid-template-columns:1fr 1fr;
 	align-items: center;
+}
+.headlogo img{
+	position: relative;
+	top: 3px;
+	width: 300px;
 }
 .topmenu{
 	padding:0;
@@ -79,7 +81,7 @@ h3{
 }
 .topmenu li a{
 	display:block;
-	font-size: 12px;
+	font-size: 15px;
 	color:#fff;
 	padding:0 35px;
 	font-style: normal;
@@ -108,33 +110,33 @@ h3{
 }
 /************FOOTER***********/
 .footerrsite{
-	padding:60px 0 20px 0;
+	padding:60px 0 40px 0;
 	background: #EAEBED;
 }
-.footergrid{
-	display:grid;
-	grid-template-columns:1fr 1.8fr 1.6fr;
-	grid-gap:0 60px;
-}
-.fotcoltitle{
-	font-size: 22px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 27px;
-	letter-spacing: 0px;
-	text-align: left;
-	color: #18338B;
-	margin-bottom:15px;
-}
-.foottext, .footmenu{
-	padding-top:27px;
+.foottext {
+	padding-top:47px;
 }
 .foottext{
+	white-space: pre-line;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 15px;
 	line-height: 18px;
 	color: #000000;
+}
+.foottitles{
+	margin-top: 47px;
+}
+.foottitle{
+	display: inline-block;
+	margin-right: 40px;
+	margin-bottom: 30px;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 27px;
+	color: #18338B;
+	text-decoration: none;
 }
 .sitecopy{
 	font-style: normal;
@@ -143,32 +145,7 @@ h3{
 	line-height: 15px;
 	color: #000000;
 	opacity: 0.5;
-	margin-top:55px;
-}
-.bottomenu{
-	padding:0;
-	margin:0;
-	list-style:none;
-}
-.bottomenu li{
-	display:inline-block;
-}
-.bottomenu li a{
-	display:block;
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 15px;
-	line-height: 18px;
-	color: #18338B;
-	padding:0 12px;
-	text-decoration:none;
-}
-.bottomenu li:last-child a{
-	padding-right:0;
-}
-.bottomenu li:first-child a{
-	padding-left:0;
+	margin-top:10px;
 }
 /**************HOME**************/
 .homesliderboxes{
@@ -185,10 +162,10 @@ h3{
 .itemslide:last-child .slideproto{
 	width:600px;
 }
-.itemslide:last-child .slideproto .textsldiebox{
+.itemslide:last-child .slideproto .textslidebox{
 	text-align:left;
 	box-sizing:border-box;
-	padding-left: 14%;
+	padding-left: 12%;
 }
 .itemslide:first-child .slideproto{
 	width: 800px;
@@ -250,7 +227,7 @@ h3{
 .slidermainproto .itemslide:last-child .slidename{
 	padding-left:7%;
 }
-.textsldiebox{
+.textslidebox{
     position: absolute;
     left: 0;
     right: 0;
@@ -259,14 +236,14 @@ h3{
     text-align: center;
 	 transform: skew(-15deg);
 }
-.textsldiebox .busbtn{
+.textslidebox .busbtn{
 	padding: 0 35px;
     height: 52px;
     font-size: 14px;
     line-height: 52px;
     width: auto;
 }
-.textsldiebox .slidename{
+.textslidebox .slidename{
 	font-weight: bold;
 	font-size: 19px;
 	line-height: 23px;
@@ -354,6 +331,10 @@ h3{
 .businesgrid{
 	margin-top:60px;
 }
+.busineitem{
+	display: flex;
+	flex-direction: column;
+}
 .busineitemimg{
 	margin-bottom:35px;
 }
@@ -364,6 +345,7 @@ h3{
 	height: 186px;
 	overflow:hidden;
 	box-sizing:border-box;
+	object-fit: cover;
 }
 .specmaincover{
 	display: inline-block;
@@ -397,8 +379,11 @@ h3{
 	line-height: 20px;
 	color: #18338B;
 }
+.busineitemtext.withbutton{
+	margin-bottom: 50px;
+}
 .busbtwrapp{
-	margin-top:50px;
+	margin-top: auto;
 }
 /************Buston************/
 .busbtn{
@@ -854,5 +839,39 @@ h3{
 .networkinvest .projectcolname{
 	font-size: 30px;
 	line-height: 37px;
+	color: #18338B;
+}
+/**************Legal***********/
+.legalsite{
+	margin-bottom: 90px;
+}
+.legalsection{
+	margin-top: 70px;
+}
+.legaltitle{
+	font-weight: bold;
+	font-size: 33px;
+	line-height: 40px;
+	color: #18338B;
+}
+.legaltext{
+	white-space: pre-line;
+	margin-top: 30px;
+	font-size: 20px;
+	line-height: 24px;
+}
+.legalsection:first-child .legaltext{
+	max-width: 461px;
+	margin-top: 50px;
+	font-size: 16px;
+	line-height: 20px;
+}
+.legalhighlited{
+	color: #18338B;
+}
+.bold{
+	font-weight:bold;
+}
+.legalsection a{
 	color: #18338B;
 }

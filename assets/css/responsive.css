@@ -1,27 +1,97 @@
 
 @media(max-width:1800px){
-	
-	.itemslide:last-child .slideproto .textsldiebox{
-		padding-left:35px;
+
+	.itemslide:last-child .slideproto .textslidebox{
+		padding-left:65px;
 	}
-	.textsldiebox .slidename{
+	.textslidebox .slidename{
 		font-size:16px;
 	}
-	.textsldiebox .busbtn{
+	.textslidebox .busbtn{
 		font-size:12px;
 	}
 }
-@media(max-width:1024px){
-	
+@media(max-width:1700px){
+
+	.slick-track{
+		left: -30px !important;
+	}
+}
+@media(max-width:1500px){
+
+	.slick-track{
+		left: -50px !important;
+	}
+	.itemslide .slideproto .textslidebox{
+		padding-left:12px;
+	}
+	.itemslide:last-child .slideproto .textslidebox{
+		padding-left:55px;
+	}
+}
+@media(max-width:1300px){
+
+	.headlogo img{
+		width: 230px;
+	}
+	.topmenu li a{
+		font-size: 13px;
+	}
+	.slick-track{
+		left: 0 !important;
+	}
+	.imagerectbox{
+		min-height:400px;
+		position:relative;
+		width:auto;
+		left:0;
+	}
+	.slideproto{
+		min-height:auto;
+	}
+	.textslidebox {
+		bottom: 50px;
+	}
+	.slideproto:after{
+		display:none;
+	}
+	.itemslide, .imagerectbox, .textslidebox {
+		transform: skew(0);
+	}
+	.itemslide:first-child .slideproto {
+		width: auto;
+		left: 0;
+	}
+	.itemslide:last-child .slideproto {
+		width: auto;
+	}
+	.itemslide:last-child .slideproto .textslidebox{
+		padding-left:0;
+		text-align:center;
+	}
+	.itemslide:first-child .slideproto .logofirstbox{
+		padding-left:30px;
+	}
+	.itemslide:first-child .slideproto .imagerectbox{
+		width:auto;
+	}
+	.slidermainproto .itemslide:last-child .slidename{
+		padding-left:0;
+	}
+}
+@media(max-width:1023px){
+
+	.ourbusinesmaintext{
+		display:none;
+	}
 	.businesgrid{
 		grid-template-columns: 1fr;
 		grid-gap: 50px 0;
 	}
-	.busineitemimg{
-		text-align:center;
-	}
-	.ourbusinesmaintext{
-		display:none;
+	.busineitem {
+		max-width: 400px;
+		margin: 0 auto;
+		text-align: center;
 	}
 	.busineitemimg img {
 		width: 144px;
@@ -32,13 +102,18 @@
 		box-shadow: 0px 55px 60px rgba(24, 51, 139, 0.01);
 	}
 	.busineitemname{
+		min-height: initial;
 		font-size:24px;
 	}
 	.ourbusinesmain .busineitemname br{
 		display:none;
 	}
-	.busbtwrapp{
-		margin-top:20px;
+	.busineitemtext{
+		min-height: initial;
+		text-align: justify;
+	}
+	.busineitemtext.withbutton{
+		margin-bottom:20px;
 	}
 	.busbtwrapp .busbtn{
 		width:100%;
@@ -79,13 +154,16 @@
 		font-size: 14px;
 		line-height: 17px;
 	}
+	.ouradvantagesgrid .nameitem br {
+		/*display: none;*/
+	}
 	.ouradvantagesgrid .iconitem{
-		width:48px;
-		height:48px;
+		width:80px;
+		height:80px;
 	}
 	.ouradvantagesgrid .iconitem .iconitemcover{
-		width:34px;
-		height:34px;
+		width:60px;
+		height:60px;
 	}
 	.ouradvantagesgrid .iconitem .iconitemcover img{
 		max-width:60%;
@@ -93,48 +171,9 @@
 	.advsection2 .titlesection{
 		font-size:24px;
 	}
-	
-	.imagerectbox{
-		min-height:400px;
-		position:relative;
-		width:auto;
-		left:0;
-	}
-	.slideproto{
-		min-height:auto;
-	}
 	.logofirstbox{
 		font-size: 28px;
 		line-height: 34px;
-	}
-	.textsldiebox {
-		bottom: 50px;
-	}
-	.slideproto:after{
-		display:none;
-	}
-	.itemslide, .imagerectbox, .textsldiebox {
-		transform: skew(0);
-	}
-	.itemslide:first-child .slideproto {
-		width: auto;
-		left: 0;
-	}
-	.itemslide:last-child .slideproto {
-		width: auto;
-	}
-	.itemslide:last-child .slideproto .textsldiebox{
-		padding-left:0;
-		text-align:center;
-	}
-	.itemslide:first-child .slideproto .logofirstbox{
-		padding-left:30px;
-	}
-	.itemslide:first-child .slideproto .imagerectbox{
-		width:auto;
-	}
-	.slidermainproto .itemslide:last-child .slidename{
-		padding-left:0;
 	}
 }
 
@@ -158,15 +197,22 @@
 		font-size:16px;
 		line-height:20px;
 	}
+	.advsection1{
+		background-image:none!important;
+		padding-bottom:0!important;
+		padding-top:30px;
+	}
 	.imgmobile{
 		display:block;
 		text-align:center;
 		padding-top:20px;
 	}
 	.imgmobile img{
-		max-width:100%;
+		width:100%;
+		height: 500px;
 		display:block;
 		margin:auto;
+		object-fit: cover;
 	}
 	.cftextsection2{
 		background-image:none!important;
@@ -348,7 +394,7 @@
 		left: 10px;
 		z-index:2;
 	}
-	.headegrid{
+	.headgrid{
 		grid-template-columns: 1fr;
 	}
 	.topmenu{
@@ -399,13 +445,6 @@
 	.foottext{
 		font-size:14px;
 	}
-	.sitecopy{
-		display:none;
-	}
-	.copymobile{
-		display:block;
-		text-align:center;
-	}
 	.bottomenu{
 		margin:20px 0 0 0;
 	}
@@ -445,17 +484,15 @@
 		padding-bottom:50px;
 		box-sizing: border-box;
 	}
-	
-	.advsection1{
-		background-image:none!important;
-		padding-bottom:0!important;
-		padding-top:30px;
-	}
+
 	.advsection1 .titlesection{
 		font-size:24px;
 	}
 	.advsection1 .abouttextgrid p{
 		margin:0;
+	}
+	.imgmobile img {
+		height: 400px;
 	}
 	
 	.temgrid {
@@ -469,6 +506,18 @@
 	.advsection3 .titlesection{
 		font-size: 24px;
 		line-height: 29px;
+	}
+
+	.ouradvantagesgrid .iconitem{
+		width:48px;
+		height:48px;
+	}
+	.ouradvantagesgrid .iconitem .iconitemcover{
+		width:34px;
+		height:34px;
+	}
+	.ouradvantagesgrid .iconitem .iconitemcover img{
+		max-width:60%;
 	}
 }
 
