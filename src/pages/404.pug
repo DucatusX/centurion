@@ -1,0 +1,18 @@
+extends layouts/index
+
+block head
+  title Centurion 404
+  meta(content="Centurion page not exist" name="description")
+
+block header
+  include common/header
+
+block content
+  .pagehead(style='background-image: url(img/advisory/head-bg.png)')
+    .wrapper
+      .pageheadtext
+        h1
+          | Error 404
+
+block footer
+  include common/footer

@@ -1,12 +1,15 @@
 doctype html
 html(lang="en")
-    block head
-        head
-            meta(charset="utf-8")
+    head
+        meta(charset="utf-8")
+        meta(content="index, nofollow" name="”robots”")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        link(rel="stylesheet" href="css/style.min.css")
+        block head
             title Centurion
-            meta(content="width=device-width, initial-scale=1" name="viewport")
-            meta(content="ie=edge" http-equiv="x-ua-compatible")
-            link(rel="stylesheet" href="css/style.min.css")
+            meta(content="Centurion website" name="description")
+
     body
         .sitemainwrapper
             block header
