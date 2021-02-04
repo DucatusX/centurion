@@ -1,0 +1,186 @@
+extends layouts/index
+
+block head
+  title Centurion Advisory
+  meta(content="Centurion Advisory Page" name="description")
+
+block header
+  include common/header
+
+block content
+  .pagehead(style='background-image: url(img/advisory/head-bg.png)')
+    .wrapper
+      .pageheadtext
+        h1
+          | Let&rsquo;s explore
+          br
+          | big ideas
+          br
+          | together.
+          
+  .aboutmaintext.advsection1.padding100(style='background-image: url(img/advisory/expertise-bg.png)')
+    .wrapper
+      .abouttextgrid
+        h2.titlesection Our Expertise
+        p
+          | The digital/online marketing industry has proven to be one of the
+          | most lucrative in recent times, with social media tools and
+          | innovations that have changed people&rsquo;s daily lives, ways of
+          | conducting business, growing and more. Today, more entrepreneurs
+          | are being driven to think out of the box to stay relevant and keep
+          | up with consumers&rsquo; demands for better products and services.
+        p
+          | But in a world rife with new ideas, how does one go from being an
+          | interesting concept into a thriving business?
+        p
+          | With our background in entrepreneurship, corporate finance,
+          | marketing, sales and information technology, we have helped build
+          | and grow various new business ideas.
+    .imgmobile
+      img(src='img/advisory/expertise-bg-mob.png' alt='expertise')
+
+  .advsection2.padding100
+    .wrapper
+      h2.titlesection What can Centurion do for you?
+      .ouradvantagesgrid
+        .advantagecol
+          .iconitemwrap
+            .iconitem
+              .iconitemcover
+                img(src='img/advisory/business.svg' alt='business')
+          .nameitem
+            | New business
+            br
+            | planning and
+            br
+            | strategy
+        .advantagecol
+          .iconitemwrap
+            .iconitem
+              .iconitemcover
+                img(src='img/advisory/market.svg' alt='market')
+          .nameitem Market analysis
+        .advantagecol
+          .iconitemwrap
+            .iconitem
+              .iconitemcover
+                img(src='img/advisory/sales.svg' alt='sales')
+          .nameitem
+            | Sales and
+            br
+            | distribution
+        .advantagecol
+          .iconitemwrap
+            .iconitem
+              .iconitemcover
+                img(src='img/advisory/crowdfunding.svg' alt='crowdfunding')
+          .nameitem
+            | Crowdfunding
+            br
+            | and investment
+            br
+            | strategy
+        .advantagecol
+          .iconitemwrap
+            .iconitem
+              .iconitemcover
+                img(src='img/advisory/blockchain.svg' alt='blockchain')
+          .nameitem
+            | Blockchain and
+            br
+            | smart contracts
+        .advantagecol
+          .iconitemwrap
+            .iconitem
+              .iconitemcover
+                img(src='img/advisory/tokenisation.svg' alt='tokenisation')
+          .nameitem Tokenisation
+        .advantagecol
+          .iconitemwrap
+            .iconitem
+              .iconitemcover
+                img(src='img/advisory/trading.svg' alt='trading')
+          .nameitem
+            | Trading and fund
+            br
+            | management
+        .advantagecol
+          .iconitemwrap
+            .iconitem
+              .iconitemcover
+                img(src='img/advisory/digital-marketing.svg' alt='digital marketing')
+          .nameitem
+            | Digital
+            br
+            | marketing
+
+  .advsection3.padding100
+    .wrapper
+      h2.titlesection Our Team of Experts
+      .temgrid
+        .teamcal
+          .teamphoto
+            img(src='img/advisory/ronny-tome.png' alt='Ronny Tome')
+          .temcaltext
+            .membername Ronny Tome
+            .memberpos CEO, Emperor Group
+        .teamcal
+          .teamphoto
+            img(src='img/advisory/bertie-worth.png' alt='Bertie Worth')
+          .temcaltext
+            .membername Bertie Worth
+            .memberpos CFO, Emperor Group
+        .teamcal
+          .teamphoto
+            img(src='img/advisory/nick-james.png' alt='Nick James')
+          .temcaltext
+            .membername Nick James
+            .memberpos CMO, Emperor Group
+        .teamcal
+          .teamphoto
+            img(src='img/advisory/alex-benson.png' alt='Alex Benson')
+          .temcaltext
+            .membername Alex Benson
+            .memberpos Head of Exchange and Trading, AA+
+        .teamcal
+          .teamphoto
+            img(src='img/advisory/silke-leistner.png' alt='Silke Leistner')
+          .temcaltext
+            .membername Silke Leistner
+            .memberpos
+              | Head of Operations &ndash; Europe and GMCC
+              br
+              | The Network by Ducatus
+
+  .advsection4.padding100
+    .wrapper
+      h2.titlesection Our Projects
+      .porjetcgridtwo
+        .projctcol
+          .prlogo
+            img(src='img/footer-logo.png' alt='centurion logo')
+          .prname The Network by Centurion
+          .prtext
+            | The Network by Centurion is the flagship project of Centurion
+            | Market Advisory Group. A community organised in 2017 originally
+            | for the sales and distribution of the cryptocurrency Ducatus
+            | Coin (DUC), The Network today is spread across 180 countries
+            | worldwide and has over 117,000 registered accounts.
+        .projctcol
+          .prname Earning Opportunity
+          .prtext
+            | The Compensation Plan created by Centurion for The Network
+            | offers partners eight different commissions. Premiums and
+            | bonuses are paid for DSV Package (Digital Shopping Voucher)
+            | purchases made by the community. Through a very modern
+            | administration and invoicing programme, sales commissions are
+            | recorded in real time and credited directly to partners&rsquo; various
+            | accounts. Network partners enjoy the flexibility to decide on
+            | how to redeem their DSV on multiple platforms. All these
+            | options, from premium Ducatus Merchandise to the latest gadgets,
+            | electronics, and more, may be redeemed in the Member Portal.
+      .btnsectiontext
+        a.busbtn(href='https://ducatus.net' target='_blank') Learn more
+
+block footer
+  include common/footer

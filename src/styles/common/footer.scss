@@ -1,0 +1,42 @@
+@import '../mixins/media';
+
+.footerrsite {
+  padding: 60px 0 40px 0;
+  background-color: var(--footer-background-color);
+}
+
+.foottext {
+  padding-top: 47px;
+  white-space: pre-line;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--footer-text-color);
+}
+
+.foottitles {
+  margin-top: 47px;
+}
+
+.foottitle {
+  display: inline-block;
+  margin-right: 40px;
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  text-decoration: none;
+  color: var(--footer-title-color);
+}
+
+.sitecopy {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--footer-site-copy-color);
+  opacity: 0.5;
+  margin-top: 10px;
+}

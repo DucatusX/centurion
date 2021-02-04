@@ -1,4 +1,4 @@
+.history/
 node_modules
-.history
-build
 .DS_Store
+build

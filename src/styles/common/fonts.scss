@@ -1,0 +1,46 @@
+@import "../mixins/main";
+
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Thin", 100);
+@include font-face(
+  "Montserrat",
+  "../fonts/Montserrat/Montserrat-ExtraLight",
+  200
+);
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Light", 300);
+@include font-face(
+  "Montserrat",
+  "../fonts/Montserrat/Montserrat-Regular",
+  normal
+);
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Medium", 500);
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Bold", 600);
+@include font-face(
+  "Montserrat",
+  "../fonts/Montserrat/Montserrat-SemiBold",
+  700
+);
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Black", 800);
+@include font-face(
+  "Montserrat",
+  "../fonts/Montserrat/Montserrat-ExtraBold",
+  900
+);
+
+// @include font-face('Montserrat', '../fonts/Montserrat/Montserrat-BlackItalic');
+// @include font-face('Montserrat', '../fonts/Montserrat/Montserrat-BoldItalic');
+// @include font-face(
+//   'Montserrat',
+//   '../fonts/Montserrat/Montserrat-ExtraBoldItalic'
+// );
+// @include font-face(
+//   'Montserrat',
+//   '../fonts/Montserrat/Montserrat-ExtraLightItalic'
+// );
+// @include font-face('Montserrat', '../fonts/Montserrat/Montserrat-Italic');
+// @include font-face('Montserrat', '../fonts/Montserrat/Montserrat-LightItalic');
+// @include font-face('Montserrat', '../fonts/Montserrat/Montserrat-MediumItalic');
+// @include font-face(
+//   'Montserrat',
+//   '../fonts/Montserrat/Montserrat-SemiBoldItalic'
+// );
+// @include font-face('Montserrat', '../fonts/Montserrat/Montserrat-ThinItalic');

@@ -1,0 +1,35 @@
+$scheme-name: 'white', 'dark';
+$scheme-icons: (('metamask', 'menu-user-profile', 'svg'));
+
+// @include themePath('dark', $scheme-icons);
+@include theme('white', $scheme-icons);
+
+.icon {
+  &:before {
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &-flex {
+    display: flex;
+    align-items: center;
+    width: max-content;
+
+    &-column {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  &-shrimp {
+    &:before {
+      content: '\1F990';
+    }
+  }
+}

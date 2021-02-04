@@ -1,0 +1,595 @@
+/************The Network************/
+@media (max-width: 1800px) {
+  .itemslide {
+    &:last-child {
+      .slideproto {
+        .textslidebox {
+          padding-left: 65px;
+        }
+      }
+    }
+  }
+  .textslidebox {
+    .slidename {
+      font-size: 16px;
+    }
+    .busbtn {
+      font-size: 12px;
+    }
+  }
+  .advsection1 {
+    background-position: 400px center;
+  }
+}
+@media (max-width: 1700px) {
+  .slick-track {
+    left: -30px !important;
+  }
+}
+@media (max-width: 1500px) {
+  .slick-track {
+    left: -50px !important;
+  }
+  .itemslide {
+    .slideproto {
+      .textslidebox {
+        padding-left: 12px;
+      }
+    }
+    &:last-child {
+      .slideproto {
+        .textslidebox {
+          padding-left: 55px;
+        }
+      }
+    }
+  }
+  .advsection1 {
+    background-position: 200px center;
+  }
+}
+@media (max-width: 1300px) {
+  .headlogo {
+    img {
+      width: 230px;
+    }
+  }
+  .topmenu {
+    li {
+      a {
+        font-size: 13px;
+      }
+    }
+  }
+  .slick-track {
+    left: 0 !important;
+  }
+  .itemslide {
+    .slideproto {
+      .textslidebox {
+        padding-left: 0;
+      }
+    }
+    transform: skew(0);
+    &:first-child {
+      .slideproto {
+        width: auto;
+        left: 0;
+        .logofirstbox {
+          padding-left: 30px;
+        }
+        .imagerectbox {
+          width: auto;
+        }
+      }
+    }
+    &:last-child {
+      .slideproto {
+        width: auto;
+        .textslidebox {
+          padding-left: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .imagerectbox {
+    min-height: 400px;
+    position: relative;
+    width: auto;
+    left: 0;
+    transform: skew(0);
+  }
+  .slideproto {
+    min-height: auto;
+    &:after {
+      display: none;
+    }
+  }
+  .textslidebox {
+    bottom: 50px;
+    transform: skew(0);
+  }
+  .slidermainproto {
+    .itemslide {
+      &:last-child {
+        .slidename {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1023px) {
+  .ourbusinesmain {
+    padding-top: 20px;
+    .busineitemname {
+      br {
+        display: none;
+      }
+    }
+  }
+  .cftextsection4 {
+    padding-top: 50px;
+    .ourbusinesmaintext {
+      display: block;
+      font-size: 16px;
+      line-height: 20px;
+      color: #18338b;
+      text-align: center;
+      h2 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 20px;
+      }
+    }
+    .businesgrid {
+      margin-top: 40px;
+    }
+    .busineitemimg {
+      margin-bottom: 20px;
+    }
+  }
+  .ourbusinesmaintext {
+    display: none;
+  }
+  .advantagescenturion {
+    .ourbusinesmaintext {
+      display: block;
+      .titlesection {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 0;
+        text-align: center;
+      }
+    }
+    padding: 50px 0;
+    .businesgrid {
+      margin-top: 30px;
+    }
+  }
+  .businesgrid {
+    grid-template-columns: 1fr;
+    grid-gap: 50px 0;
+  }
+  .busineitem {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .specmaincover {
+    box-shadow: 0px 55px 60px rgba(24, 51, 139, 0.01);
+  }
+  .busineitemname {
+    min-height: initial;
+    font-size: 24px;
+  }
+  .busineitemtext {
+    min-height: initial;
+    text-align: justify;
+  }
+  .busineitemtext.withbutton {
+    margin-bottom: 20px;
+  }
+  .busbtwrapp {
+    .busbtn {
+      width: 100%;
+    }
+  }
+  .ouradvantagesgrid {
+    grid-gap: 33px 50px;
+    .advantagecol {
+      flex-direction: column;
+    }
+    .nameitem {
+      max-width: 140px;
+      margin-left: 0;
+      margin-top: 20px;
+      text-align: center;
+      br {
+        display: none;
+      }
+    }
+    .iconitem {
+      width: 80px;
+      height: 80px;
+      .iconitemcover {
+        width: 60px;
+        height: 60px;
+        img {
+          max-width: 60%;
+        }
+      }
+    }
+  }
+  .advsection2 {
+    .titlesection {
+      font-size: 24px;
+    }
+  }
+  .logofirstbox {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .advsection1 {
+    background-position: 60px center;
+  }
+}
+@media (max-width: 991px) {
+  .imagwpater {
+    text-align: center;
+    img {
+      max-width: 100%;
+    }
+  }
+  .gridcoltext {
+    h2 {
+      font-size: 24px;
+      line-height: 29px;
+      br {
+        display: none;
+      }
+    }
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .cftextsection2 {
+    .gridcoltext {
+      h2 {
+        font-size: 24px;
+        line-height: 29px;
+      }
+    }
+  }
+  .gridcardlist1 {
+    margin-top: 50px;
+    grid-template-columns: 1fr;
+    grid-gap: 40px 0;
+    .carditem {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .carditemimgcover {
+      margin: auto;
+    }
+    .carditemimg {
+      margin-bottom: 40px;
+    }
+    .carditemname {
+      font-size: 22px;
+    }
+    .carditemtext {
+      font-size: 14px;
+      line-height: 17px;
+      text-align: justify;
+    }
+  }
+  .cftextsection3text {
+    font-size: 16px;
+    h2 {
+      font-size: 24px;
+    }
+  }
+  .padding100 {
+    padding: 50px 0;
+  }
+  .cftextsection5text {
+    .titlesection {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 34px;
+    }
+  }
+  .cftextsection5 {
+    .cftextsection5text {
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+  .exploreprojectsgrid {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    margin-top: 50px;
+    .projectcol {
+      padding: 40px 25px;
+      height: auto;
+      min-height: initial;
+      ul {
+        li {
+          font-size: 14px;
+        }
+      }
+    }
+    .projectcolname {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 20px;
+    }
+  }
+  .porjetcgridtwo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px 0;
+    .prname {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .prtext {
+      font-size: 16px;
+    }
+    .projctcol {
+      padding: 30px 25px;
+      min-height: auto;
+    }
+    .prlogo {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .advsection4 {
+    .titlesection {
+      font-size: 24px;
+    }
+  }
+  .singlogin {
+    padding: 70px 0;
+  }
+  .membergrid {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    .membergridcol {
+      &:first-child {
+        padding-right: 0;
+        text-align: center;
+        background-image: url(../img/network/mbrborder2.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        padding-bottom: 35px;
+        &:after {
+          display: none;
+        }
+      }
+      .busbtn {
+        margin-left: 0;
+      }
+      &:last-child {
+        text-align: center;
+        padding-top: 35px;
+      }
+    }
+  }
+  .membercolname {
+    font-size: 25px;
+  }
+  .the_networktext1 {
+    padding: 60px 0 30px 0;
+    .gridcoltext {
+      h2 {
+        font-size: 24px;
+        line-height: 29px;
+      }
+    }
+  }
+  .the_networktext2 {
+    padding: 60px 0 30px 0;
+    .abouttextgrid {
+      .titlesection {
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 29px;
+      }
+    }
+  }
+  .gridsection1 {
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .networkinvest {
+    padding: 40px 0;
+    .exploreprojectsgrid {
+      margin-top: 30px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .mobilemenu-toggle {
+    display: block;
+    top: 17px;
+    left: 15px;
+    z-index: 2;
+  }
+  .mobilemenu-toggle.active {
+    top: 16px;
+    left: 18px;
+  }
+  .headgrid {
+    grid-template-columns: 1fr;
+  }
+  .topmenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 57px;
+    width: 100%;
+    z-index: 10;
+    li {
+      display: block;
+      text-align: right;
+      a {
+        padding: 25px;
+        text-align: right;
+        background: rgba(208, 226, 254, 1);
+        color: rgba(24, 51, 139, 1);
+        font-size: 18px;
+        text-transform: none;
+      }
+      &:nth-child(even) {
+        a {
+          background: rgba(197, 216, 246, 1);
+        }
+      }
+      &:last-child {
+        a {
+          padding: 25px;
+        }
+      }
+    }
+  }
+  .headlogo {
+    text-align: center;
+  }
+  .footerrsite {
+    padding-top: 40px;
+  }
+  .foottext {
+    font-size: 14px;
+  }
+  .titlesection {
+    margin-bottom: 30px;
+  }
+  .abouttextgrid {
+    font-size: 16px;
+  }
+  .padding80 {
+    padding: 30px 0;
+  }
+  .textheadwrapper {
+    &:after {
+      display: none;
+    }
+  }
+  .pageheadtext {
+    h1 {
+      font-weight: 500;
+      font-size: 44px;
+      line-height: 54px;
+    }
+    min-height: 400px;
+    align-items: flex-end;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+  }
+  .ourbusinesmain {
+    padding-top: 0;
+  }
+  .cftextsection4 {
+    padding-top: 50px;
+  }
+  .advsection1 {
+    background-position: 0px center;
+    .titlesection {
+      font-size: 24px;
+    }
+    .abouttextgrid {
+      p {
+        margin: 0;
+      }
+    }
+  }
+  .temgrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px 0;
+  }
+  .teamphoto {
+    img {
+      margin: auto;
+    }
+  }
+  .advsection3 {
+    .titlesection {
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+}
+@media (max-width: 630px) {
+  .advsection1 {
+    background-image: none !important;
+    padding-bottom: 0 !important;
+    padding-top: 30px;
+  }
+  .cftextsection2 {
+    background-image: none !important;
+    padding-bottom: 0 !important;
+  }
+  .imgmobile {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    img {
+      width: 100%;
+      height: 400px;
+      display: block;
+      margin: auto;
+      object-fit: cover;
+    }
+  }
+  .gridsection1 {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  .the_networktext1 {
+    padding: 30px 0 0 0;
+    background-image: none;
+    .imgmobile {
+      img {
+        height: 400px;
+      }
+    }
+  }
+  .the_networktext2 {
+    padding: 30px 0 0 0;
+    background-image: none;
+  }
+  .ouradvantagesgrid {
+    grid-template-columns: 1fr 1fr;
+    .iconitem {
+      width: 70px;
+      height: 70px;
+      .iconitemcover {
+        width: 55px;
+        height: 55px;
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .headlogo {
+    img {
+      left: 20px;
+    }
+  }
+  .busineitemimg {
+    img {
+      width: 144px;
+      height: 144px;
+    }
+  }
+}
