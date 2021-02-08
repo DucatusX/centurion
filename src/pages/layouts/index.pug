@@ -1,12 +1,15 @@
+include ../seo/favicons
 include ../seo/preloader
 
 doctype html
 html(lang="en")
     head
+        base(href="/")
         meta(charset="utf-8")
-        meta(content="index, nofollow" name="”robots”")
+        meta(content="index, nofollow" name="robots")
         meta(content="width=device-width, initial-scale=1" name="viewport")
         meta(content="ie=edge" http-equiv="x-ua-compatible")
+        +head-favicon
         +head-preloader
         block head
             title Centurion
