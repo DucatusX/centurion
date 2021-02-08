@@ -101,21 +101,17 @@ h3 {
   padding: 80px 0;
 }
 
-/*********Main classes********/
-/**************HOME**************/
-/************Buston************/
-/**********Crowdfunding page**************/
-/**************Advisory***********/
-/*************The Network**************/
-/**************Legal***********/
-
 // slider
 .homesliderboxes {
   position: relative;
 }
 
-.itemslide {
+.slick-slide {
   transform: skew(15deg);
+
+  > div {
+    display: flex;
+  }
 
   &:last-child {
     .slideproto {
@@ -129,6 +125,29 @@ h3 {
     }
   }
 
+  &:first-child {
+    .slideproto {
+      width: 800px;
+      left: -31%;
+
+      .imagerectbox {
+        width: 928px;
+      }
+
+      .logofirstbox {
+        box-sizing: border-box;
+        padding-left: 17%;
+      }
+    }
+  }
+
+  // &:last-child {
+  //   .slideproto {
+  //     .textslidebox {
+  //       // margin-left: 3%;
+  //     }
+  //   }
+  // }
   &:first-child {
     .slideproto {
       width: 800px;
@@ -169,7 +188,7 @@ h3 {
 }
 
 .slidermainproto {
-  .itemslide {
+  .slick-slide {
     &:first-child {
       .slideproto {
         &:after {
