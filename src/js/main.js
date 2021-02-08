@@ -1,30 +1,30 @@
 // import $ from '../plugins/jquery/dist/jquery.min';
 // import 'slick-carousel';
 
-import $ from 'jquery';
+import $ from "jquery";
 window.$ = window.jQuery = $;
-import 'slick-carousel';
+import "slick-carousel";
 
 $(document).ready(() => {
   // eslint-disable-next-line no-console
   console.log(`document ready`);
 
-  $('.mobilemenu-toggle').on('click', function () {
-    $(this).next('.topmenu').stop().slideToggle();
-    $(this).toggleClass('active');
-    $('.windowcover').toggle();
+  $(".mobilemenu-toggle").on("click", function () {
+    $(this).next(".topmenu").stop().slideToggle();
+    $(this).toggleClass("active");
+    $(".windowcover").toggle();
   });
 
-  $('.windowcover').on('click', function () {
-    $('.topmenu').stop().slideUp();
-    $('.windowcover').hide();
-    $('.mobilemenu-toggle').removeClass('active');
+  $(".windowcover").on("click", function () {
+    $(".topmenu").stop().slideUp();
+    $(".windowcover").hide();
+    $(".mobilemenu-toggle").removeClass("active");
   });
 
   //easy scroll nav
-  $('.topmenu a, .foottitles a').on('click', function () {
+  $(".topmenu a, .foottitles a").on("click", function () {
     var hash = this.hash;
-    $('html, body').animate(
+    $("html, body").animate(
       {
         scrollTop: $(hash).offset().top,
       },
@@ -36,7 +36,7 @@ $(document).ready(() => {
 
   //Start Slick
   // if ($().slick) {
-  $('.slidermainproto').slick({
+  $(".slidermainproto").slick({
     infinite: false,
     slidesToShow: 5,
     speed: 1200,

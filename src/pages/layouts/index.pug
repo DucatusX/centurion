@@ -1,3 +1,5 @@
+include ../seo/preloader
+
 doctype html
 html(lang="en")
     head
@@ -5,11 +7,13 @@ html(lang="en")
         meta(content="index, nofollow" name="”robots”")
         meta(content="width=device-width, initial-scale=1" name="viewport")
         meta(content="ie=edge" http-equiv="x-ua-compatible")
+        +head-preloader
         block head
             title Centurion
             meta(content="Centurion website" name="description")
 
     body
+        +body-preloader
         .sitemainwrapper
             block header
             block content
