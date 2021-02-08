@@ -5,7 +5,7 @@ $scheme-icons: (('metamask', 'menu-user-profile', 'svg'));
 @include theme('white', $scheme-icons);
 
 .icon {
-  &:before {
+  &::before {
     content: '';
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@ $scheme-icons: (('metamask', 'menu-user-profile', 'svg'));
   }
 
   &-shrimp {
-    &:before {
+    &::before {
       content: '\1F990';
     }
   }

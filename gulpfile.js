@@ -22,7 +22,8 @@ const dev = gulp.parallel(
   seo
 );
 
-const build = gulp.series(clean, copyDependencies, dev);
+// const build = gulp.series(clean, copyDependencies, dev);
+const build = gulp.series(clean, dev);
 
 module.exports.start = gulp.series(build, serve);
 module.exports.build = build;

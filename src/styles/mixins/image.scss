@@ -13,7 +13,6 @@
     display: $display;
     width: $width;
     height: $height;
-
     background-repeat: no-repeat;
 
     @content;
@@ -35,7 +34,6 @@
     display: $display;
     width: $width;
     height: $height;
-
     background-repeat: no-repeat;
 
     @content;
@@ -47,7 +45,7 @@
   ##{$name} {
     @each $className, $iconPath, $iconType in $icons {
       .icon-#{$className} {
-        &:before {
+        &::before {
           background-image: url('../assets/img/icons/#{$name}/icon-#{$iconPath}-#{$name}.#{$iconType}');
         }
       }
@@ -60,7 +58,7 @@
   ##{$name} {
     @each $className, $iconPath, $iconType in $icons {
       .icon-#{$className} {
-        &:before {
+        &::before {
           background-image: url('../assets/img/icons/#{$name}/icon-#{$iconPath}.#{$iconType}');
         }
       }

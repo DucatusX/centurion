@@ -2,7 +2,6 @@
 
 // breakpoints without borders
 @mixin b($point) {
-
   @if $point==desktop {
     @media (max-width: $mediaWidthDesktop) {
       @content ;
@@ -28,10 +27,9 @@
   }
 
   @else if $point==mobile3x {
-
     @media only screen and (-webkit-min-device-pixel-ratio: 3),
-    only screen and (min-resolution: 3dppx),
-    only screen and (min-resolution: 350dpi) {
+      only screen and (min-resolution: 3dppx),
+      only screen and (min-resolution: 350dpi) {
       @content ;
     }
   }
@@ -45,7 +43,6 @@
 
 // breakpoints with borders
 @mixin bb($point, $point2: 0) {
-
   @if $point==desktop {
     @media (max-width: $mediaWidthLaptop) and (min-width: $mediaWidthDesktop) {
       @content ;
