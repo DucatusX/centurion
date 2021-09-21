@@ -1,0 +1,169 @@
+extends layouts/index
+
+block head
+  title Centurion Crowdfunding
+  meta(content="Centurion Crowdfunding Page" name="description")
+
+block header
+  include common/header
+
+block content
+  .pagehead(style='background-image: url(img/crowdfunding/head-bg.png)')
+    .wrapper
+      .pageheadtext
+        .textheadwrapper
+          h1
+            | Lease.
+            br
+            | Earn. 
+            br
+            | Live it up.
+
+  .cftextsection.padding80
+    .wrapper
+      .gridsection1
+        .gridcol1
+          .imagwpater
+            img(loading="lazy", src='img/crowdfunding/future.png' alt='future')
+        .gridcol2
+          .gridcoltext
+            h2 Fund your future through alternative business concepts.
+            p
+              | We believe in the power of technology to transform and advance
+              | the way we live. Through the years, innovation has radically
+              | changed the way we do business. Today, thanks to ever-evolving
+              | tools and solutions, wealth-building has become democratic and
+              | accessible to all.
+            p
+              | Lease and Earn uses innovative technology and smart contracts
+              | to connect people to high-value projects that are
+              | traditionally just open to a select few.
+
+  .cftextsection2.padding80(style='background-image: url(img/crowdfunding/lease.png)')
+    .wrapper
+      .gridsection1
+        .gridcol1
+          .gridcoltext
+            h2
+              | What is Lease
+              br
+              |   and Earn?
+            p
+              strong Lease and Earn
+              |  is a next-generation platform
+              |   that allows people to afford leasing portions of new
+              |   businesses, high-value properties and assets as well as
+              |   priceless experiences. Through Lease and Earn, people can
+              |   harness their earning potential and build lasting wealth
+              |   without having to shell out millions of dollars.
+        .gridcol2
+    .imgmobile
+      img(loading="lazy", src='img/crowdfunding/lease-mob.png' alt='lease')
+
+  .cftextsection3.padding80
+    .wrapper
+      .cftextsection3text
+        h2 How does Lease and Earn work?
+        p Lease and Earn offers people 3 leasing categories:
+      .gridcardlist1
+        .carditem
+          .carditemimg
+            .carditemimgcover
+              img(loading="lazy", src='img/crowdfunding/start-up.svg' alt='start up')
+          .carditemname Start-up / Liquidity
+          .carditemtext
+            | Lend liquidity to newly established businesses and earn up to 5%
+            | monthly dividends.
+        .carditem
+          .carditemimg
+            .carditemimgcover
+              img(loading="lazy", src='img/crowdfunding/property-lease.svg' alt='property lease')
+          .carditemname Property Lease
+          .carditemtext
+            | Lease fractions of high-value real estate properties and earn up
+            | to 8% monthly dividends.
+        .carditem
+          .carditemimg
+            .carditemimgcover
+              img(loading="lazy", src='img/crowdfunding/lifestyle-lease.svg' alt='lifestyle lease')
+          .carditemname Lifestyle Lease
+          .carditemtext
+            | Lease time and usage for one-of-a-kind projects and earn up to
+            | 10% monthly dividends. Plus, the chance to experience these
+            | projects yourself!
+
+  .ourbusinesmain.cftextsection4.padding80
+    .wrapper
+      .ourbusinesmaintext
+        h2.titlesection Why Lease and Earn?
+      .businesgrid
+        .busineitem
+          .busineitemimg
+            .specmaincover
+              .speccover
+                img(loading="lazy", src='img/crowdfunding/simple-and-affordable.png' alt='simple and affordable')
+          .busineitemname Simple and Affordable
+          .busineitemtext
+            | Lease for as little as $100 or as much as millions. However way
+            | you want to participate, we have an asset that&rsquo;s right for you.
+        .busineitem
+          .busineitemimg
+            .specmaincover
+              .speccover
+                img(loading="lazy", src='img/crowdfunding/diversity.png' alt='diversity of properties and projects')
+          .busineitemname
+            | Diversity of Properties and Projects
+          .busineitemtext
+            | Get access to various types of opportunities, from the usual
+            | (real estate) to the unusual (luxury villa).
+        .busineitem
+          .busineitemimg
+            .specmaincover
+              .speccover
+                img(loading="lazy", src='img/crowdfunding/lifestyle.png' alt='lifestyle')
+          .busineitemname
+            | Lifestyle
+            br
+            | Benefits
+          .busineitemtext
+            | We offer a number of projects that lets you
+            | earn and &ldquo;enjoy&rdquo;. From a stay at a luxury
+            | Bali villa to a holiday at an exclusive
+            | property in Salalah, we are always on the
+            | lookout for non-traditional ways to
+            | make leasing equally fun and profitable.
+
+  .cftextsection5.padding100
+    .wrapper
+      .cftextsection5text
+        a(rel="noopener", href='https://tokenization.centuriongm.com/' target='_blank')
+          h2.titlesection Explore Available Projects
+        p
+          | Ready to lease? Browse through our list of available projects.
+      .exploreprojectsgrid
+        .projectcol
+          .projectcolname Lease
+          ul
+            li
+              a(rel="noopener", href='https://tokenization.centuriongm.com/muscat' target='_blank') Proof of Gold (POG) Muscat
+            li
+              a(rel="noopener", href='https://tokenization.centuriongm.com/mediterranea' target='_blank') Ducatus Support Centre (DSC) Mediterranea
+        .projectcol
+          .projectcolname Earn
+          ul
+            li
+              a(rel="noopener", href='https://tokenization.centuriongm.com/smjazz' target='_blank') SM Jazz Makati
+            li
+              a(rel="noopener", href='https://tokenization.centuriongm.com/wupde' target='_blank') Multi family House in Wuppertal
+            li
+              a(rel="noopener", href='https://tokenization.centuriongm.com/marina' target='_blank') Dubai Marina
+        .projectcol
+          .projectcolname Live it up
+          ul
+            li
+              a(rel="noopener", href='https://tokenization.centuriongm.com/villa' target='_blank') Villa Supernova, Bali
+            li
+              a(rel="noopener", href='https://tokenization.centuriongm.com/yasmin' target='_blank') Nucleus Yasmin Salalah
+
+block footer
+  include common/footer

@@ -1,0 +1,141 @@
+extends layouts/index
+
+block header
+	include common/header
+
+block content
+	.homesliderboxes
+		.slidermainproto
+			.itemslide
+				.slideproto
+					.imagerectbox(style='background-image: url(img/slider/connect-opportunities.png)')
+					.textslidebox
+						.logofirstbox
+							img(loading="lazy", src='img/logo-big.svg' alt='centurion logo')
+							br
+							|  Connect with
+							br
+							|  tomorrow&rsquo;s
+							br
+							|  opportunities
+							br
+							|  today.
+			.itemslide
+				.slideproto
+					.imagerectbox(style='background-image: url(img/slider/learn-connect.png)')
+					.textslidebox
+						.slidename Learn and Connect
+						.busbtn COMING SOON
+			.itemslide
+				.slideproto
+					.imagerectbox(style='background-image: url(img/slider/network.png)')
+					.textslidebox
+						.slidename Network AND GROW
+						a.busbtn(href='the_network.html' target='_blank') Network Marketing
+			.itemslide
+				.slideproto
+					.imagerectbox(style='background-image: url(img/slider/lease.png)')
+					.textslidebox
+						.slidename Lease and EARN
+						a.busbtn(href='crowdfunding.html') Crowdfunding 
+			.itemslide
+				.slideproto
+					.imagerectbox(style='background-image: url(img/slider/join-and-win.png)')
+					.textslidebox
+						.slidename Join and win
+						a.busbtn(rel="noopener", href='https://www.ducatuscoins.com/buy', target='_blank') Special promotion
+
+	#abouthome.aboutmaintext.padding80
+		.wrapper
+			.abouttextgrid
+				h2.titlesection
+					| Centurion.
+					br
+					|               Turning potential into possibilities.
+				p
+					| Each day, in some part of the world, a big idea is being born. It
+					| may be an innovation that could revolutionise everyday living, a
+					| technology that could improve the lives of many, or a product that
+					| could help create generational wealth. At Centurion, we have made
+					| it our mission to find these big ideas and bring them to life, and
+					| to you.
+				p
+					| We make ideas marketable and profitable so more opportunities can
+					| be made available to all members of society, giving everyone a
+					| chance to grow and thrive.
+				p
+					| With technology and innovation on our side, we are continuously
+					| developing a sustainable framework that allows people to design
+					| their ideal financial future and build generational wealth,
+					| together.
+
+	#ourbusineshome.ourbusinesmain.padding80
+		.wrapper
+			.ourbusinesmaintext
+				h2.titlesection Our Businesses
+				p
+					| We believe in Connection. It defines everything that we do as
+					br
+					|               a company and plays a big part in the way we develop our
+					|               businesses.
+			.businesgrid
+				.busineitem
+					.busineitemimg
+						.specmaincover
+							.speccover
+								img(loading="lazy", src='img/main/marketing-advisory.png' alt='marketing advisory')
+					.busineitemname
+						| Marketing
+						br
+						| Advisory
+					.busineitemtext.withbutton
+						| Connecting people through education. As a highly specialised
+						| marketing company with a deep understanding of interconnected
+						| marketing strategies, we are able to share our extensive
+						| expertise along with proven ways to people looking to venture
+						| out and create alternative business concepts and reach new
+						| markets across a multitude of industries.
+					.busbtwrapp
+						.busbtn COMING SOON
+				.busineitem
+					.busineitemimg
+						.specmaincover
+							.speccover
+								img(loading="lazy", src='img/main/network-marketing.png' alt='network marketing')
+					.busineitemname
+						| Network
+						br
+						| Marketing
+					.busineitemtext.withbutton
+						| Connecting people in a global community of 
+						| early adopters. Our expertise in sales and 
+						| marketing has allowed us to share 
+						| opportunities to more people in the 
+						| world. Our maiden project is 
+						| a network community of over 120,000
+						| registered accounts and counting. Spread
+						| across 180 countries, it is committed to 
+						| supporting our vision for a cashless financial 
+						| future.
+					.busbtwrapp
+						a.busbtn(rel="noopener", href='https://network.centuriongm.com/', target='_blank') Join The Network
+				.busineitem
+					.busineitemimg
+						.specmaincover
+							.speccover
+								img(loading="lazy", src='img/main/crowdfunding.png' alt='crowdfunding')
+					.busineitemname
+						| Crowdfunding
+						br
+						br
+					.busineitemtext.withbutton
+						| Connecting people and potential. Through our unique Lease &amp; Earn
+						| model, anyone can lease a portion of a global business, property
+						| or luxury asset. By bringing resources together, we are able to
+						| access high value assets and share attractive returns to every
+						| lessee.
+					.busbtwrapp
+						a.busbtn(href='crowdfunding.html') See OPPORTUNITIES
+
+block footer
+	include common/footer

@@ -1,0 +1,67 @@
+@mixin before-img($display: block, $width: 100%, $height: 100%, $position: r) {
+  @at-root #{&}:before {
+    content: '';
+
+    @if $position==a {
+      position: absolute;
+    }
+
+    @if $position==r {
+      position: relative;
+    }
+
+    display: $display;
+    width: $width;
+    height: $height;
+    background-repeat: no-repeat;
+
+    @content;
+  }
+}
+
+@mixin after-img($display: block, $width: 100%, $height: 100%, $position: r) {
+  @at-root #{&}:after {
+    content: '';
+
+    @if $position==a {
+      position: absolute;
+    }
+
+    @if $position==r {
+      position: relative;
+    }
+
+    display: $display;
+    width: $width;
+    height: $height;
+    background-repeat: no-repeat;
+
+    @content;
+  }
+}
+
+@mixin themePath($name, $icons) {
+  // [data-theme='#{$name}'] {
+  ##{$name} {
+    @each $className, $iconPath, $iconType in $icons {
+      .icon-#{$className} {
+        &::before {
+          background-image: url('../assets/img/icons/#{$name}/icon-#{$iconPath}-#{$name}.#{$iconType}');
+        }
+      }
+    }
+  }
+}
+
+@mixin theme($name, $icons) {
+  // [data-theme='#{$name}'] {
+  ##{$name} {
+    @each $className, $iconPath, $iconType in $icons {
+      .icon-#{$className} {
+        &::before {
+          background-image: url('../assets/img/icons/#{$name}/icon-#{$iconPath}.#{$iconType}');
+        }
+      }
+    }
+  }
+}
