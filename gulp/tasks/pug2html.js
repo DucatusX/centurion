@@ -2,8 +2,6 @@ const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const pug = require("gulp-pug");
 const pugLinter = require("gulp-pug-linter");
-const htmlValidator = require("gulp-w3c-html-validator");
-const bemValidator = require("gulp-html-bem-validator");
 const config = require("../config");
 
 module.exports = function pug2html() {
@@ -20,7 +18,8 @@ module.exports = function pug2html() {
         pretty: config.pug2html.beautifyHtml,
       })
     )
-    .pipe(htmlValidator())
-    .pipe(bemValidator())
+    // Deprecated methods, upgrading needs to change to ESL modules
+    // .pipe(htmlValidator())
+    // .pipe(bemValidator())
     .pipe(gulp.dest("build"));
 };
